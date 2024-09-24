@@ -90,5 +90,11 @@ int main(void) {
     //close
     inputFile.close();
 
+    // Print the parsed data
+    std::cout << "Parsed student data:" << std::endl;
+    for (const auto& student : students) {
+        std::cout << "First Name: " << student.firstName << ", Last Name: " << student.lastName << std::endl;
+    }
+
     return 0;
 }
